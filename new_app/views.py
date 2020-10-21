@@ -11,7 +11,7 @@ import numpy as np
 from keras.applications.vgg19 import decode_predictions
 from keras.applications import MobileNet
 # python manage.py runserver
-import tensorflow as tf
+# import tensorflow as tf
 
 # from .models import ModelWithFileField
 # Create your views here
