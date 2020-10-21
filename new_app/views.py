@@ -11,7 +11,7 @@ import numpy as np
 from keras.applications.vgg19 import decode_predictions
 from keras.applications import MobileNet
 # python manage.py runserver
-# import tensorflow as tf
+import tensorflow as tf
 
 # from .models import ModelWithFileField
 # Create your views here
@@ -41,8 +41,8 @@ def predict(request):
         uploaded_file_url = fs.url(filename)
         # print(uploaded_file_url)
         
-#         import keras.backend.tensorflow_backend as tb
-#         tb._SYMBOLIC_SCOPE.value = True
+        import keras.backend.tensorflow_backend as tb
+        tb._SYMBOLIC_SCOPE.value = True
         
         img='.'+uploaded_file_url
         # test_image=[]
