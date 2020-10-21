@@ -41,8 +41,8 @@ def predict(request):
         uploaded_file_url = fs.url(filename)
         # print(uploaded_file_url)
         
-        import keras.backend.tensorflow_backend as tb
-        tb._SYMBOLIC_SCOPE.value = True
+#         import keras.backend.tensorflow_backend as tb
+#         tb._SYMBOLIC_SCOPE.value = True
         
         img='.'+uploaded_file_url
         # test_image=[]
